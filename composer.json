@@ -1,26 +1,40 @@
 {
-    "name": "hsyir/ticketing",
-    "license": "MIT",
-    "authors": [
-        {
-            "name": "Hossein",
-            "email": "hosseinyaghmaee@gmail.com"
-        }
-    ],
-    "minimum-stability": "dev",
-    "require-dev": {
-        "orchestra/testbench": "9999999-dev",
-        "laravel/legacy-factories": "1.x-dev"
-    },
-    "autoload": {
-        "psr-4": {
-            "Hsy\\Ticketing\\": "src"
-        }
-    },
-    "autoload-dev": {
-        "psr-4": {
-            "Hsy\\Ticketing\\Test": "tests"
-        }
+  "name": "hsyir/ticketing",
+  "license": "MIT",
+  "authors": [
+    {
+      "name": "Hossein",
+      "email": "hosseinyaghmaee@gmail.com"
     }
-
+  ],
+  "minimum-stability": "dev",
+  "require-dev": {
+    "orchestra/testbench": "9999999-dev",
+    "laravel/legacy-factories": "1.x-dev"
+  },
+  "autoload": {
+    "psr-4": {
+      "Hsy\\Ticketing\\": "src"
+    }
+  },
+  "autoload-dev": {
+    "psr-4": {
+      "Hsy\\Ticketing\\Test\\": "tests"
+    }
+  },
+  "scripts": {
+    "test": "php vendor/phpunit/phpunit/phpunit",
+    "test-debug": "php vendor/phpunit/phpunit/phpunit --debug",
+    "test-coverage": "php vendor/phpunit/phpunit/phpunit"
+  },
+  "extra": {
+    "laravel": {
+      "aliases": {
+        "Ticketing": "Hsy\\Ticketing\\Facades\\Ticketing"
+      },
+      "providers": [
+        "Hsy\\Ticketing\\HsyTicketingServiceProvider"
+      ]
+    }
+  }
 }

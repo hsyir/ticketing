@@ -4,8 +4,9 @@
         "Read more about it at https://getcomposer.org/doc/01-basic-usage.md#installing-dependencies",
         "This file is @generated automatically"
     ],
-    "content-hash": "bb0af10c88cd642deeb82badfc725eea",
-    "packages": [
+    "content-hash": "5cb32bd23adaed0329741bbf97f7a277",
+    "packages": [],
+    "packages-dev": [
         {
             "name": "brick/math",
             "version": "0.9.1",
@@ -2402,12 +2403,12 @@
             "source": {
                 "type": "git",
                 "url": "https://github.com/sebastianbergmann/phpunit.git",
-                "reference": "89f4a909af2c820d52c174554ad9d15c1501b546"
+                "reference": "83ca7758afea41414ed7e6c10d1c56dc5ffa3b15"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/sebastianbergmann/phpunit/zipball/89f4a909af2c820d52c174554ad9d15c1501b546",
-                "reference": "89f4a909af2c820d52c174554ad9d15c1501b546",
+                "url": "https://api.github.com/repos/sebastianbergmann/phpunit/zipball/83ca7758afea41414ed7e6c10d1c56dc5ffa3b15",
+                "reference": "83ca7758afea41414ed7e6c10d1c56dc5ffa3b15",
                 "shasum": ""
             },
             "require": {
@@ -2498,7 +2499,7 @@
                     "type": "github"
                 }
             ],
-            "time": "2020-11-10T12:54:21+00:00"
+            "time": "2020-11-12T06:09:51+00:00"
         },
         {
             "name": "psr/container",
@@ -6521,7 +6522,6 @@
             "time": "2020-07-08T17:02:28+00:00"
         }
     ],
-    "packages-dev": [],
     "aliases": [],
     "minimum-stability": "dev",
     "stability-flags": {

@@ -8,16 +8,16 @@ class CreateUserDepartmentTable extends \Illuminate\Database\Migrations\Migratio
 {
     public function up()
     {
-        Schema::create("user_department", function (Blueprint $table) {
+        Schema::create("department_user", function (Blueprint $table) {
             $table->id();
             $table->unsignedInteger("user_id");
             $table->unsignedInteger("department_id");
-            $table->boolean("supervisor");
+            $table->boolean("is_supervisor")->default(false);
         });
     }
 
     public function drop()
     {
-        Schema::dropIfExists("user_department");
+        Schema::dropIfExists("department_user");
     }
 }
