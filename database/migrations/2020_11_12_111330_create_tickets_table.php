@@ -18,7 +18,7 @@ class CreateTicketsTable extends \Illuminate\Database\Migrations\Migration
             $table->unsignedInteger("creator_id")->nullable();
             $table->unsignedInteger("user_id")->nullable();
             $table->unsignedInteger("department_id")->nullable();
-            $table->unsignedInteger("type_id")->nullable();
+            $table->unsignedInteger("subject_id")->nullable();
             $table->unsignedInteger("status_id")->nullable();
             $table->unsignedInteger("priority_id")->nullable();
             $table->dateTime("closed_at")->nullable();
